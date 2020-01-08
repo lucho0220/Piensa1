@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="767.0" style="-fx-background-color: white; -fx-background-color: ;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piensa.FXMLVistaController">
+    <children>
+      <ImageView fitHeight="243.0" fitWidth="275.0" layoutX="56.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/vitefama.png" />
+         </image>
+      </ImageView>
+      <Label prefHeight="51.0" prefWidth="482.0" textAlignment="CENTER" />
+      <AnchorPane layoutX="356.0" prefHeight="565.0" prefWidth="433.0" style="-fx-background-color: brown;">
+         <children>
+            <ImageView fitHeight="34.0" fitWidth="48.0" layoutX="317.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/silueta-de-usuario.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="314.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/bloquear.png" />
+               </image>
+            </ImageView>
+              <Button fx:id="button" layoutX="47.0" layoutY="352.0" onMouseClicked="#handleButtonAction" prefHeight="41.0" prefWidth="293.0" style="-fx-background-color: black; -fx-wrap-text: white; -fx-font-size: 20; -fx-text-fill: white; radi: 60;" text="INGRESAR" />
+            <TextField fx:id="txt_usuario" layoutX="15.0" layoutY="167.0" prefHeight="34.0" prefWidth="293.0" promptText="Usuario..." style="-fx-background-color: organe; -fx-font-size: 20;" />
+            <PasswordField fx:id="txt_contraseña" layoutX="15.0" layoutY="257.0" prefHeight="34.0" prefWidth="293.0" promptText="Contraseña..." style="-fx-background-color: brown; -fx-font-size: 20;" />
+            <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="53.0" layoutY="75.0" prefHeight="49.0" prefWidth="281.0" style="-fx-text-fill: WHITE; -fx-font-size: 35;" styleClass="public final Font getFont()" text="BIENVENIDO " wrapText="true">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="btnexit" layoutX="263.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: BROWN; TE: WHITE;" text="SALIR" AnchorPane.rightAnchor="27.0" />
+            <ImageView fx:id="lblsalir" fitHeight="20.0" fitWidth="21.0" layoutX="370.0" layoutY="29.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblerror" layoutX="14.0" layoutY="319.0" prefHeight="18.0" prefWidth="302.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
